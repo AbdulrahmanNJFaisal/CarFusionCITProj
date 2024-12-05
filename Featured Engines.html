@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Engines - CarFusion</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .car-card {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .car-card img {
+            max-width: 25%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .car-card img:hover {
+            transform: scale(1.1); /* Enlarges image on hover */
+        }
+
+        .car-card h3 {
+            margin: 10px 0;
+        }
+
+        .redirect-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .redirect-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">CarFusion</div>
+            <ul>
+                <li><a href="Home Page.html">Home</a></li>
+                <li><a href="Featured Cars.html">Featured Cars</a></li>
+                <li><a href="Featured Engines.html">Featured Engines</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>All About Car Engines</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main id="engines">
+        <section class="section">
+            <h2>Introduction to Car Engines</h2>
+            <p>Car engines are the heart of any automobile. They convert fuel into motion, allowing cars to move. Engines come in various types, including internal combustion engines, electric motors, and hybrids.</p>
+        </section>
+
+        <section class="section" id="featured-cars">
+            <h2>Featured Cars</h2>
+
+            <!-- Chevrolet Bolt EV -->
+            <div class="car-card">
+                <h3>Chevrolet Bolt EV (2024)</h3>
+                <a href="FeaturedCarsPage.html"><img src="Images/Chevrolet Bolt EV (2024).jpeg" alt="Chevrolet Bolt EV"></a>
+                <p>The Chevrolet Bolt EV (2024) is a compact electric car that offers impressive range and affordability. It's designed to make electric driving accessible to all.</p>
+            </div>
+
+            <!-- Ferrari F8 Tributo -->
+            <div class="car-card">
+                <h3>Ferrari F8 Tributo (2023)</h3>
+                <a href="FeaturedCarsPage.html"><img src="Images/Ferrari F8 Tributo (2023).jpeg" alt="Ferrari F8 Tributo"></a>
+                <p>The Ferrari F8 Tributo (2023) is a supercar that combines stunning design with breathtaking performance, powered by a 710-horsepower V8 engine.</p>
+            </div>
+
+            <!-- Ford Mustang GT -->
+            <div class="car-card">
+                <h3>Ford Mustang GT (2024)</h3>
+                <a href="FeaturedCarsPage.html"><img src="Images/Ford Mustang GT (2024).jpeg" alt="Ford Mustang GT"></a>
+                <p>The Ford Mustang GT (2024) is an American muscle car icon, featuring a powerful V8 engine and a design that merges heritage with modern innovation.</p>
+            </div>
+
+            <!-- Tesla Model 3 -->
+            <div class="car-card">
+                <h3>Tesla Model 3 (2024)</h3>
+                <a href="FeaturedCarsPage.html"><img src="Images/Tesla Model 3.jpg" alt="Tesla Model 3"></a>
+                <p>The Tesla Model 3 is a game-changing electric sedan, known for its performance, advanced features, and extensive range on a single charge.</p>
+            </div>
+        </section>
+
+        <!-- Learn More Section -->
+        <section class="section">
+            <h2>Learn More About Car Engines</h2>
+            <button class="redirect-button" onclick="redirectToEngineInfo()">Learn About Car Engines</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 CarFusion. All rights reserved.  
+        Contact us: CarFusionWeb@gmail.com | (055) 885-6055
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function redirectToEngineInfo() {
+            window.location.href = "https://www.howacarworks.com/";
+        }
+    </script>
+</body>
+</html>

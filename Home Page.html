@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarFusion - Your Ultimate Car Resource</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Featured Section */
+        .featured {
+            padding: 3rem 0;
+        }
+
+        .featured h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .featured-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .featured-item-content {
+            padding: 1rem;
+        }
+
+        /* News Section */
+        .news {
+            background-color: #fff;
+            padding: 3rem 0;
+        }
+
+        .news h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .news-item {
+            background: var(--bg-color);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .news-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-item-content {
+            padding: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .featured-grid, .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">CarFusion</div>
+            <ul>
+                <li><a href="Home Page.html">Home</a></li>
+                <li><a href="Featured Cars.html">Featured Cars</a></li>
+                <li><a href="Featured Engines.html">Featured Engines</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Dream Car</h1>
+                <p>Explore the latest models, read expert reviews, and stay updated with automotive news.</p>
+                <a href="#featured" class="btn">Explore Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="featured" id="featured">
+        <div class="container">
+            <h2>Featured Cars</h2>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <img src="Home Images\Sports Car.webp" alt="Sports Car">
+                    <div class="featured-item-content">
+                        <h3>Latest Sports Car</h3>
+                        <p>Experience the thrill of high-performance driving with our top pick.</p>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="Home Images\Electric Car.webp" alt="Electric Car">
+                    <div class="featured-item-content">
+                        <h3>Electric Revolution</h3>
+                        <p>Discover the future of automotive with cutting-edge electric vehicles.</p>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <img src="Home Images\Luxury Car.webp" alt="Luxury Car">
+                    <div class="featured-item-content">
+                        <h3>Luxury Redefined</h3>
+                        <p>Indulge in the epitome of automotive luxury and sophistication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="news" id="news">
+    <div class="container">
+        <h2>Latest Automotive News</h2>
+        <div class="news-grid">
+            <div class="news-item">
+                <img src="Home Images\New Model Releases.jpg" alt="News 1">
+                <div class="news-item-content">
+                    <h3>New Model Releases</h3>
+                    <p>Get a first look at the upcoming models set to hit the market.</p>
+                    <a href="https://www.caranddriver.com/news/future-cars/" class="btn" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="Home Images\Industry Innovations.jpg" alt="News 2">
+                <div class="news-item-content">
+                    <h3>Industry Innovations</h3>
+                    <p>Explore the latest technological advancements in the automotive world.</p>
+                    <a href="https://www.autoblog.com/category/technology/" class="btn" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="Home Images\Expert Reviews.jpg" alt="News 3">
+                <div class="news-item-content">
+                    <h3>Expert Reviews</h3>
+                    <p>Read comprehensive reviews from our team of automotive experts.</p>
+                    <a href="https://www.motortrend.com/reviews/" class="btn" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 CarFusion. All rights reserved.</p>
+            <p>Contact us: CarFusionWeb@gmail.com | (055) 885-6055</p>
+        </div>
+    </footer>
+</body>
+</html>
